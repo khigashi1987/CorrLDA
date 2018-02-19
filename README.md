@@ -23,11 +23,11 @@ asymcorrlda [-I maxiter] [-K n_classes] [-A alpha] [-B beta] [-G gamma] [-S rand
 
 -K (int) : The number of topics.
 
--A (float) : The initial settings of an asymmetric Dirichlet prior over the document-topic distributions. These values are optimized during the Gibbs iterations.
+-A (float) : The initial settings of an asymmetric Dirichlet prior over the document-topic distributions (alpha parameters). These values are optimized during the Gibbs iterations.
 
--B (float) : The initial setting of an symmetric Dirichlet prior over the topic-word distributions. This value are optimized during the Gibbs iterations.
+-B (float) : The initial setting of an symmetric Dirichlet prior over the topic-word distributions (a beta parameter). This value are optimized during the Gibbs iterations.
 
--G (float) : The initial setting of an symmetric Dirichlet prior over the topic-tag distributions. This value are optimized during the Gibbs iterations.
+-G (float) : The initial setting of an symmetric Dirichlet prior over the topic-tag distributions (a gamma parameter). This value are optimized during the Gibbs iterations.
 
 -S (int) : a seed value for the random number generator (to fix the initial setting of the Gibbs iteration).
 
