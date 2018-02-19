@@ -7,7 +7,7 @@ Fixed-point iteration method are used for hyper-parameter update. [Minka 2000] h
 
 ## Build
 * Requirements
-  + The GNU Scientific Library (GSL)
+  - The GNU Scientific Library (GSL)
 * Edit the Makefile appropriately and type "make" command.
 
 ## Usage
