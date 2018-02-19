@@ -9,9 +9,7 @@ Fixed-point iteration method are used for hyper-parameter update. [Minka 2000] h
 
 ## Build
 
-* Requirements
-
- + The GNU Scientific Library (GSL)
+* Requirements : The GNU Scientific Library (GSL)
 
 * Edit the Makefile appropriately and type "make" command.
 
@@ -60,22 +58,12 @@ E.g.)
 
 ## Output files
 
-* [model].theta
+* [model].theta : Topic distributions for each document. (The number of documents) x (The number of topics) matrix.
 
- - Topic distributions for each document. (The number of documents) x (The number of topics) matrix.
+* [model].phi : Word distributions for each topic. (The size of word vocabulary) x (The number of topics) matrix.
 
-* [model].phi
+* [model].psi : Tag distributions for each topic. (The size of tag vocabulary) x (The number of topics) matrix.
 
- - Word distributions for each topic. (The size of word vocabulary) x (The number of topics) matrix.
+* [model].hyper : Optimization processes for hyper parameters. Each line shows parameters at each step of Gibbs iterations. From left, alpha parameters (for each topic), a beta parameter, and a gamma parameter.
 
-* [model].psi
-
- - Tag distributions for each topic. (The size of tag vocabulary) x (The number of topics) matrix.
-
-* [model].hyper
-
- - Optimization processes for hyper parameters. Each line shows parameters at each step of Gibbs iterations. From left, alpha parameters (for each topic), a beta parameter, and a gamma parameter.
-
-* [model].lik
-
- - Log-likelihood of the model in each step of iterations.
+* [model].lik : Log-likelihood of the model in each step of iterations.
